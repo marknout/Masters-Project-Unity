@@ -63,6 +63,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\PanZoom.cs" />
+    <Compile Include="Assets\PerspectivePan.cs" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>/Users/MarkOutridge/Desktop/Design Projects/0_KADK Game Design/2020/Masters Thesis Project/Masters-Project-Unity/Masters Project Mobile Setup/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
