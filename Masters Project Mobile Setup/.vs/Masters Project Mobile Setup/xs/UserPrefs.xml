@@ -1,8 +1,8 @@
 ﻿<Properties StartupConfiguration="{952AA1A6-A4C7-90F1-29BD-D8932CC43E1A}|">
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets/PerspectivePan.cs">
     <Files>
-      <File FileName="Assets/PanZoom.cs" Line="49" Column="138" />
-      <File FileName="Assets/PerspectivePan.cs" Line="6" Column="2" />
+      <File FileName="Assets/PanZoom.cs" Line="27" Column="10" />
+      <File FileName="Assets/PerspectivePan.cs" Line="8" Column="23" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
