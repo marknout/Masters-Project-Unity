@@ -1,8 +1,6 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-public class PanZoom : MonoBehaviour 
+public class PanZoom : MonoBehaviour
 {
     Vector3 touchStart;
     public float zoomOutMin = 1;
@@ -11,11 +9,13 @@ public class PanZoom : MonoBehaviour
 
     public float minX, minY, maxX, maxY;
 
+    public bool lockX;
+    public bool lockY;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -25,7 +25,7 @@ public class PanZoom : MonoBehaviour
         {
             touchStart = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         }
-        if(Input.touchCount == 2)
+        if (Input.touchCount == 2)
         {
             Touch touchZero = Input.GetTouch(0);
             Touch touchOne = Input.GetTouch(1);
@@ -40,11 +40,21 @@ public class PanZoom : MonoBehaviour
 
             zoom(difference * zoomSpeed);
         }
-        else if(Input.GetMouseButton(0))
+        else if (Input.GetMouseButton(0))
         {
             Vector3 direction = touchStart - Camera.main.ScreenToWorldPoint(Input.mousePosition);
             /*direction.x = Mathf.Clamp(0, -0.39f, 0.42f);
             direction.y = Mathf.Clamp(0, -0.51f, 0.41f);*/
+
+            if (lockX)
+            {
+                direction.x = 0;
+            }
+            if (lockY)
+            {
+                direction.y = 0;
+            }
+
             transform.position += direction;
             transform.position = new Vector3(Mathf.Clamp(transform.position.x, minX, maxX), Mathf.Clamp(transform.position.y, minY, maxY));
         }

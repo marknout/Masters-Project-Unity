@@ -26,7 +26,4 @@ public class PerspectivePan : MonoBehaviour
             Camera.main.transform.position += direction;
         }
     }
-    private Vector3 GetWorldPosition (){
-
-    }
 }
