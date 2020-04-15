@@ -64,6 +64,7 @@
   <ItemGroup>
     <Compile Include="Assets\CameraAxisLock.cs" />
     <Compile Include="Assets\DragDrop.cs" />
+    <Compile Include="Assets\NewBehaviourScript.cs" />
     <Compile Include="Assets\PanZoom.cs" />
     <Compile Include="Assets\PerspectivePan.cs" />
     <Reference Include="Unity.Timeline.Editor">
