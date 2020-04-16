@@ -62,11 +62,15 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\CameraAxisLock.cs" />
-    <Compile Include="Assets\DragDrop.cs" />
-    <Compile Include="Assets\NewBehaviourScript.cs" />
-    <Compile Include="Assets\PanZoom.cs" />
-    <Compile Include="Assets\PerspectivePan.cs" />
+    <Compile Include="Assets\Scripts\CameraAxisLock.cs" />
+    <Compile Include="Assets\Scripts\DragAndDrop.cs" />
+    <Compile Include="Assets\Scripts\DragDrop.cs" />
+    <Compile Include="Assets\Scripts\DragHandler.cs" />
+    <Compile Include="Assets\Scripts\MoveToMouse.cs" />
+    <Compile Include="Assets\Scripts\NewBehaviourScript.cs" />
+    <Compile Include="Assets\Scripts\PanZoom.cs" />
+    <Compile Include="Assets\Scripts\PerspectivePan.cs" />
+    <Compile Include="Assets\Scripts\Slots.cs" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>/Users/MarkOutridge/Desktop/Design Projects/0_KADK Game Design/2020/Masters Thesis Project/Masters-Project-Unity/Masters Project Mobile Setup/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
